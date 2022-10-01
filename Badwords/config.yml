@@ -1,0 +1,38 @@
+# Plugin develloped by GFelberg
+# Config.yml
+
+# language: en
+# Thanks for downloading my plugin. For more plugins, dont forget to look my updates!
+# If you find any bugs or ideas to the plugin, send me a message.
+
+# language: br/pt
+# Obrigado por baixar meu plugin. Para mais plugins, não esqueça de olhar as atualizações!
+# Se você encontrar algum problema ou ter alguma ideia para o plugin, mande uma mensagem.	 
+
+# Permissions
+
+# badwords.badwords : Access to the Badwords Command and the Help Page
+# badwords.bypass : Access to use the banned words in the chat
+# badwords.reload : Access to Reload the Plugin
+
+# Configuration 1.0
+# This configuration will display the Badwords Messages
+
+Badwords:
+  Prefix: '&b[&eBadwords&b]&r'
+  AddWord: '&eThe word has been added to the list'
+  RemoveWord: '&eThe word has been removed from the list'
+  Already: '&cThis word already exists in the list!'
+  NotList: '&cThis word is not in the list' 
+  NoWords: '&cNo words found!'
+  NoPerm: '&cDont use a badword!'
+
+# Configuration 1.1
+# This configuration will display the Help Page Messages
+
+Help:
+  Page: '&eShow this page'
+  AddWord: '&eAdd a word to the list'
+  RemoveWord: '&eRemoves a word from the list'
+  ListWords: '&eList all the words from the list'
+  Reload: '&eReloads the Plugin'

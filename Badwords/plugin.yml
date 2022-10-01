@@ -1,0 +1,8 @@
+name: Badwords
+version: 1.0
+main: me.GFelberg.Badwords.Main
+author: GFelberg
+commands:
+  badwords:
+    usage: /<command>
+    aliases: [bd]
