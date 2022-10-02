@@ -1,4 +1,4 @@
-# Badwords
+# Badwords 🔇
 ### **Portuguese:**
 O plugin Badwords tem a capacidade de bloquear palavras de serem vistas no chat do seu servidor.
 
@@ -22,7 +22,7 @@ The Badwords plugin has the ability to block words from being seen in your serve
 #### Available in the following versions ⚙️:
   - 1.8x - 1.19x
 
-#### Alternative Hosting:
+#### Alternative Hosting 🏠:
   - Spigot: https://www.spigotmc.org/resources/badwords.95276/
   
 ![image](https://user-images.githubusercontent.com/41524430/193424174-2239377c-78ea-4d5b-b868-12a4acbfaafb.png)
