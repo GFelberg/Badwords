@@ -1,24 +1,28 @@
 # Badwords
+### **Portuguese:**
 O plugin Badwords tem a capacidade de bloquear palavras de serem vistas no chat do seu servidor.
 
-Comandos:
-  - /badwords help - Mostrar a página de ajuda de comandos
-  - /badwords add <word> - Adicionar uma palavra para a lista de palavras banidas
-  - /badwords remove <word> - Remover uma palavra da lista de palavras banidas
-  - /badwords list - Listar todas as palavras da lista de palavras banidas
-  - /badwords reload - Recarregar o plugin
-  
-  - Alternativa de Comando: [bd]
-  
-Permissões:
-  - badwords.admin : Acessar o comando Badwords
-  - badwords.bypass : Acessar o uso de palavras banidas no chat
-  - badwords.reload : Acessar o comando de recarregamento do plugin
+### **English:**
+The Badwords plugin has the ability to block words from being seen in your server chat.
 
-Versões Compatíveis:
-  - 1.8x até 1.19x
+#### Commands:
+    /badwords help - Shows the Help Page
+    /badwords add <word> - Add a word to the list
+    /badwords remove <word> - Removes a word from the list
+    /badwords list - List all the words from the list
+    /badwords reload - Reloads the Plugin
+  
+    Aliases: [bd]
+  
+#### Permissions:
+    badwords.admin : Access to the Badwords Command
+    badwords.bypass : Access to use the Banned Words in chat
+    badwords.reload : Access to Reload the Plugin
 
-Hospedagem Alternativa:
+#### Available in the following versions ⚙️:
+  - 1.8x - 1.19x
+
+#### Alternative Hosting:
   - Spigot: https://www.spigotmc.org/resources/badwords.95276/
   
 ![image](https://user-images.githubusercontent.com/41524430/193424174-2239377c-78ea-4d5b-b868-12a4acbfaafb.png)
