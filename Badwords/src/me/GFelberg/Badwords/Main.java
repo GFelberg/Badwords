@@ -20,10 +20,10 @@ public class Main extends JavaPlugin {
 		BadwordsUtils.loadVariables();
 		getCommand("badwords").setExecutor(new Badwords());
 		Bukkit.getPluginManager().registerEvents(new BadwordsEvent(), this);
-		Bukkit.getConsoleSender().sendMessage("-----------------------------");
+		Bukkit.getConsoleSender().sendMessage("----------------------------");
 		Bukkit.getConsoleSender().sendMessage("Badwords Plugin Enabled!");
-		Bukkit.getConsoleSender().sendMessage("Plugin develloped by GFelberg");
-		Bukkit.getConsoleSender().sendMessage("-----------------------------");
+		Bukkit.getConsoleSender().sendMessage("Plugin developed by GFelberg");
+		Bukkit.getConsoleSender().sendMessage("----------------------------");
 	}
 
 	public static Main getInstance() {
@@ -31,10 +31,10 @@ public class Main extends JavaPlugin {
 	}
 
 	public void onDisable() {
-		Bukkit.getConsoleSender().sendMessage("-----------------------------");
+		Bukkit.getConsoleSender().sendMessage("----------------------------");
 		Bukkit.getConsoleSender().sendMessage("Badwords Plugin Disabled!");
-		Bukkit.getConsoleSender().sendMessage("Plugin develloped by GFelberg");
-		Bukkit.getConsoleSender().sendMessage("-----------------------------");
+		Bukkit.getConsoleSender().sendMessage("Plugin developed by GFelberg");
+		Bukkit.getConsoleSender().sendMessage("----------------------------");
 	}
 
 	public void loadBadwordsManager() {

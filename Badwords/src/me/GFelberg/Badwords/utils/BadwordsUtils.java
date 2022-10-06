@@ -14,13 +14,13 @@ public class BadwordsUtils {
 	public static String prefix, add, remove, already, notlist, nowords, noperm;
 
 	public static void loadVariables() {
-		prefix = Main.getInstance().getConfig().getString("Badwords.Prefix").replace("&", "ง");
-		add = Main.getInstance().getConfig().getString("Badwords.AddWord").replace("&", "ง");
-		remove = Main.getInstance().getConfig().getString("Badwords.RemoveWord").replace("&", "ง");
-		already = Main.getInstance().getConfig().getString("Badwords.Already").replace("&", "ง");
-		notlist = Main.getInstance().getConfig().getString("Badwords.NotList").replace("&", "ง");
-		nowords = Main.getInstance().getConfig().getString("Badwords.NoWords").replace("&", "ง");
-		noperm = Main.getInstance().getConfig().getString("Badwords.NoPerm").replace("&", "ง");
+		prefix = Main.getInstance().getConfig().getString("Badwords.Prefix").replace("&", "ยง");
+		add = Main.getInstance().getConfig().getString("Badwords.AddWord").replace("&", "ยง");
+		remove = Main.getInstance().getConfig().getString("Badwords.RemoveWord").replace("&", "ยง");
+		already = Main.getInstance().getConfig().getString("Badwords.Already").replace("&", "ยง");
+		notlist = Main.getInstance().getConfig().getString("Badwords.NotList").replace("&", "ยง");
+		nowords = Main.getInstance().getConfig().getString("Badwords.NoWords").replace("&", "ยง");
+		noperm = Main.getInstance().getConfig().getString("Badwords.NoPerm").replace("&", "ยง");
 		words = Main.badwords.badwordscfg.getStringList("BannedWords");
 	}
 
@@ -34,9 +34,9 @@ public class BadwordsUtils {
 			Main.badwords.saveWords();
 			Main.badwords.reloadWords();
 			p.sendMessage(prefix + " " + ChatColor.GREEN + "Plugin reloaded successfully!");
-			Bukkit.getServer().getConsoleSender().sendMessage("==========================================");
-			Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "Badwords Plugin reloaded");
-			Bukkit.getServer().getConsoleSender().sendMessage("==========================================");
+			Bukkit.getConsoleSender().sendMessage("==========================================");
+			Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "Badwords Plugin reloaded");
+			Bukkit.getConsoleSender().sendMessage("==========================================");
 		}
 	}
 

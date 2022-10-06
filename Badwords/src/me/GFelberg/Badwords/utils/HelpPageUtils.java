@@ -5,22 +5,22 @@ import me.GFelberg.Badwords.Main;
 public class HelpPageUtils {
 
 	public String getHelp_page() {
-		return Main.getInstance().getConfig().getString("Help.Page").replace("&", "ง");
+		return Main.getInstance().getConfig().getString("Help.Page").replace("&", "ยง");
 	}
 
 	public String getHelp_addWord() {
-		return Main.getInstance().getConfig().getString("Help.AddWord").replace("&", "ง");
+		return Main.getInstance().getConfig().getString("Help.AddWord").replace("&", "ยง");
 	}
 
 	public String getHelp_removeWord() {
-		return Main.getInstance().getConfig().getString("Help.RemoveWord").replace("&", "ง");
+		return Main.getInstance().getConfig().getString("Help.RemoveWord").replace("&", "ยง");
 	}
 
 	public String getHelp_listWords() {
-		return Main.getInstance().getConfig().getString("Help.ListWords").replace("&", "ง");
+		return Main.getInstance().getConfig().getString("Help.ListWords").replace("&", "ยง");
 	}
 
 	public String getHelp_reload() {
-		return Main.getInstance().getConfig().getString("Help.Reload").replace("&", "ง");
+		return Main.getInstance().getConfig().getString("Help.Reload").replace("&", "ยง");
 	}
 }
