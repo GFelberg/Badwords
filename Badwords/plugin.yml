@@ -1,8 +1,12 @@
 name: Badwords
-version: 1.0
+version: 1.1
 main: me.GFelberg.Badwords.Main
 author: GFelberg
+api-version: 1.13
 commands:
   badwords:
     usage: /<command>
     aliases: [bd]
+  badwordslist:
+    usage: /<command>
+    aliases: [bdlist]

@@ -15,17 +15,19 @@
 # badwords.bypass : Access to use the banned words in the chat
 # badwords.reload : Access to Reload the Plugin
 
+# PlaceHolders
+
+# %badwords_word_added% : Gets the specified word added to the list 
+# %badwords_word_removed% : Gets the specified word removed from the list 
+# %badwords_word_already% : Gets the specified word sent in the command and was already added to the list 
+# %badwords_word_notlisted% : Gets the specified word sent in the command and its not in the list
+
 # Configuration 1.0
 # This configuration will display the Badwords Messages
 
 Badwords:
   Prefix: '&b[&eBadwords&b]&r'
-  AddWord: '&eThe word has been added to the list'
-  RemoveWord: '&eThe word has been removed from the list'
-  Already: '&cThis word already exists in the list!'
-  NotList: '&cThis word is not in the list' 
-  NoWords: '&cNo words found!'
-  NoPerm: '&cDont use a badword!'
+  Message: '&cDont use a badword!'
 
 # Configuration 1.1
 # This configuration will display the Help Page Messages
@@ -36,3 +38,19 @@ Help:
   RemoveWord: '&eRemoves a word from the list'
   ListWords: '&eList all the words from the list'
   Reload: '&eReloads the Plugin'
+  
+# Configuration 1.2
+# This configuration will display the Words Messages
+
+Word:
+  Added: '&eThe word &b%badwords_word_added% &ehas been added to the list'
+  Removed: '&eThe word &b%badwords_word_removed% &ehas been removed from the list'
+  AlreadyAdded: '&cThe word &b%badwords_word_already% &calready exists in the list!'
+  NotListed: '&cThe word &b%badwords_word_notlisted% &cits not in the list!' 
+  
+# Configuration 1.3
+# This configuration will display the Banned Words List Messages
+
+List:
+  NoWords: '&cNo words found!'  
+  
