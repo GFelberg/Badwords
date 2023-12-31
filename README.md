@@ -13,7 +13,7 @@ Badwords is a plugin made for Minecraft which has the ability to block words fro
     Aliases: [bd]
   
 ### Permissions:
-    badwords.admin : Access to the Badwords command
+    badwords.admin : Access to the Badwords command and the Help Page
     badwords.bypass : Access to use the Banned Words in chat
     badwords.reload : Access to Reload the Plugin
 
@@ -51,7 +51,7 @@ Badwords é um plugin desenvolvido para o Minecraft que possui a capacidade de b
     Aliases: [bd]
   
 ### Permissões:
-    badwords.admin : Acesso ao comando Badwords
+    badwords.admin : Acesso ao comando Badwords e a Página de Ajuda
     badwords.bypass : Acesso para utilizar as palavras banidas no chat
     badwords.reload : Acesso para Recarregar o Plugin
 
