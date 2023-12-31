@@ -21,7 +21,7 @@ public class Badwords implements CommandExecutor {
 				return true;
 			}
 
-			if (!(sender.hasPermission("badwords.badwords"))) {
+			if (!(sender.hasPermission("badwords.admin"))) {
 				sender.sendMessage(ChatColor.RED + "You dont have permission to perform this command!");
 				return true;
 			}

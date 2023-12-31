@@ -11,7 +11,7 @@
 
 # Permissions
 
-# badwords.badwords : Access to the Badwords Command and the Help Page
+# badwords.admin : Access to the Badwords Command and the Help Page
 # badwords.bypass : Access to use the banned words in the chat
 # badwords.reload : Access to Reload the Plugin
 
