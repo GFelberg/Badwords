@@ -21,6 +21,14 @@ Badwords is a plugin made for Minecraft which has the ability to block words fro
     It's simple. Use the commands "/bd add <word>" to add a word to the list, or "/bd remove <word>" to remove
     from the list. All the words displayed in the list will be blocked on chat.
 
+### Placeholders:
+    The plugin has some placeholders. It doesnt needs to have any plugin dependency.
+
+    %badwords_word_added% : Gets the specified word added to the list 
+    %badwords_word_removed% : Gets the specified word removed from the list 
+    %badwords_word_already% : Gets the specified word sent in the command and was already added to the list 
+    %badwords_word_notlisted% : Gets the specified word sent in the command and its not in the list
+
 ### Available for download at Spigot: https://www.spigotmc.org/resources/badwords.95276/
 
 ### Images:
@@ -50,6 +58,14 @@ Badwords é um plugin desenvolvido para o Minecraft que possui a capacidade de b
 ### Como o Plugin funciona?
     É bem simples. Use o comando "/bd add <word>" para adicionar uma palavra na lista, ou "bd remove <word>" para
     remover uma palavra da lista. Todas as palavras listadas serão bloqueadas no chat.
+
+### Placeholders:
+    Esse plugin possui algumas placeholders. Não é necessário nenhuma dependência de plugin externo.
+
+    %badwords_word_added% : Recupera a palavra adicionada na lista
+    %badwords_word_removed% : Recupera a palavra removida da lista
+    %badwords_word_already% : Recupera a palavra enviada no comando e já se encontra na lista
+    %badwords_word_notlisted% : Recupera a palavra enviada no comando e não se encontra na lista
 
 ### Imagens:
 
