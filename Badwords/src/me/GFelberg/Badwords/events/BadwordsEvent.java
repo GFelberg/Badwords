@@ -24,11 +24,11 @@ public class BadwordsEvent implements Listener {
 					return;
 				} else {
 					censored = censorWord(censored, s);
+					event.setMessage(censored);
+					p.sendMessage(BadwordsSystem.word_message);
 				}
 			}
 		}
-		event.setMessage(censored);
-		p.sendMessage(BadwordsSystem.word_message);
 	}
 
 	private String censorWord(String message, String word) {
