@@ -49,8 +49,8 @@ Word:
   NotListed: '&cThe word &b%badwords_word_notlisted% &cits not in the list!' 
   
 # Configuration 1.3
-# This configuration will display the Banned Words List Messages
+# This configuration will display the Banned Words Inventory
 
-List:
-  NoWords: '&cNo words found!'  
+WordsInventory:
+  Title: '&bBanned Words'  
   

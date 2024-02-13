@@ -22,8 +22,7 @@ import me.GFelberg.Badwords.Main;
 public class BadwordsSystem {
 
 	public static List<String> words = new ArrayList<String>();
-	public static String word_added, word_removed, word_already_added, word_notlisted;
-	public static String words_empty, word_message;
+	public static String word_added, word_removed, word_already_added, word_notlisted, word_message;
 	public static String inventory_title;
 
 	public static void loadVariables() {
@@ -31,7 +30,6 @@ public class BadwordsSystem {
 		word_removed = Main.getInstance().getConfig().getString("Word.Removed").replace("&", "§");
 		word_already_added = Main.getInstance().getConfig().getString("Word.AlreadyAdded").replace("&", "§");
 		word_notlisted = Main.getInstance().getConfig().getString("Word.NotListed").replace("&", "§");
-		words_empty = Main.getInstance().getConfig().getString("List.NoWords").replace("&", "§");
 		word_message = Main.getInstance().getConfig().getString("Badwords.Message").replace("&", "§");
 		inventory_title = Main.getInstance().getConfig().getString("VanishInventory.Title").replace("&", "§");
 	}
