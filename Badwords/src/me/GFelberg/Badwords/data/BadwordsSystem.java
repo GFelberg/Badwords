@@ -9,8 +9,12 @@ import java.util.Map;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.SkullMeta;
 import org.yaml.snakeyaml.Yaml;
 
 import me.GFelberg.Badwords.Main;
@@ -20,6 +24,7 @@ public class BadwordsSystem {
 	public static List<String> words = new ArrayList<String>();
 	public static String word_added, word_removed, word_already_added, word_notlisted;
 	public static String words_empty, word_message;
+	public static String inventory_title;
 
 	public static void loadVariables() {
 		word_added = Main.getInstance().getConfig().getString("Word.Added").replace("&", "§");
@@ -28,6 +33,7 @@ public class BadwordsSystem {
 		word_notlisted = Main.getInstance().getConfig().getString("Word.NotListed").replace("&", "§");
 		words_empty = Main.getInstance().getConfig().getString("List.NoWords").replace("&", "§");
 		word_message = Main.getInstance().getConfig().getString("Badwords.Message").replace("&", "§");
+		inventory_title = Main.getInstance().getConfig().getString("VanishInventory.Title").replace("&", "§");
 	}
 
 	public void addWord(Player p, String word) {
@@ -60,20 +66,17 @@ public class BadwordsSystem {
 	}
 
 	public void listWords(Player p) {
-		FileConfiguration customConfig = BadwordsConfig.getConfig();
-
-		if (customConfig.getString("BannedWords") == null) {
-			p.sendMessage(words_empty);
-			return;
-		} else {
-			p.sendMessage("\n===============");
-			p.sendMessage(ChatColor.AQUA + "Banned Words:\n");
-			Collections.sort(words);
-			for (String s : words) {
-				p.sendMessage(ChatColor.YELLOW + " - " + s.toLowerCase());
-			}
-			p.sendMessage("===============\n");
+		
+		Inventory inv = Bukkit.createInventory(null, 54, inventory_title);
+		Collections.sort(words);
+		for (String s : words) {
+			ItemStack item = getBadword(s);
+			inv.addItem(item);
 		}
+		for (int slot = inv.firstEmpty(); slot < 54; slot++) {
+			inv.setItem(slot, new ItemStack(Material.WHITE_STAINED_GLASS_PANE));
+		}
+		p.openInventory(inv);
 	}
 
 	public static void loadWords() {
@@ -100,5 +103,13 @@ public class BadwordsSystem {
 		} catch (IOException e) {
 			System.out.println(ChatColor.RED + "Could not read the banned_words.yml file: " + e.getMessage());
 		}
+	}
+	
+	private static ItemStack getBadword(String name) {
+		ItemStack red_concrete = new ItemStack(Material.RED_CONCRETE);
+		SkullMeta skullMeta = (SkullMeta) red_concrete.getItemMeta();
+		skullMeta.setDisplayName(name);
+		red_concrete.setItemMeta(skullMeta);
+		return red_concrete;
 	}
 }

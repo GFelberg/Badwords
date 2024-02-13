@@ -18,6 +18,7 @@ public class BadwordsUtils {
 
 		if (!(p.hasPermission("badwords.reload"))) {
 			p.sendMessage(ChatColor.RED + "You dont have permission to perform this command!");
+			return;
 		} else {
 			Main.getInstance().reloadConfig();
 			Main.getInstance().loadVariables();
