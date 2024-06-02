@@ -64,7 +64,7 @@ public class BadwordsSystem {
 	}
 
 	public void listWords(Player p) {
-		
+
 		Inventory inv = Bukkit.createInventory(null, 54, inventory_title);
 		Collections.sort(words);
 		for (String s : words) {
@@ -102,7 +102,7 @@ public class BadwordsSystem {
 			System.out.println(ChatColor.RED + "Could not read the banned_words.yml file: " + e.getMessage());
 		}
 	}
-	
+
 	private static ItemStack getBadword(String name) {
 		ItemStack red_concrete = new ItemStack(Material.RED_CONCRETE);
 		SkullMeta skullMeta = (SkullMeta) red_concrete.getItemMeta();

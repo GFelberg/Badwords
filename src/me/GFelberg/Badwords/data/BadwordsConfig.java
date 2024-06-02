@@ -14,7 +14,8 @@ public class BadwordsConfig {
 	private static FileConfiguration customFile;
 
 	public static void setupConfig() {
-		file = new File(Bukkit.getServer().getPluginManager().getPlugin("Badwords").getDataFolder(), "banned_words.yml");
+		file = new File(Bukkit.getServer().getPluginManager().getPlugin("Badwords").getDataFolder(),
+				"banned_words.yml");
 
 		if (!(file.exists())) {
 			try {
